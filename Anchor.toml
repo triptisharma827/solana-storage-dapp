@@ -1,0 +1,16 @@
+[features]
+seeds = false
+skip-lint = false
+
+[programs.devnet]
+solana_storage_dapp = "HxD8FEc1ycSbiuXrgdXLkGoz2DtaTBZiLnqjjR6h6RGm"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "devnet"
+wallet = "/home/tripti/.config/solana/id.json"
+
+[scripts]
+test = "node tests/solana-storage-dapp.js"
