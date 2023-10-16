@@ -1,8 +1,13 @@
 .App {
   text-align: center;
   margin-top: 100px;
+  background-color: #ffff;
+  border-radius: 30px;
+  font-family: monospace;
 }
-
+body {
+  background-color: teal;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -37,46 +42,41 @@
     transform: rotate(360deg);
   }
 }
-.header{
+.header {
+  padding-top: 40px;
   font-size: 40px;
+  color: darkslategray;
 }
 
 .address {
-  font-weight:800;
+  font-weight: 800;
   font-size: large;
   text-decoration: underline;
+  color: mediumseagreen;
 }
 
-.btn{
-  background-color: #282c34;
-  padding: 10px;
-  border-radius: 5px;
+.btn {
+  background-color: darkslategray;
+  padding: 8px;
+  border-radius: 4px;
   color: white;
   cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  width: 300px;
+  margin-top: 20px;
+  border: none;
 }
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  width: 80%;
-  margin-inline: auto;
-  margin-block: 50px;
-  padding: 10px;
-}
-
-.grid-item{
-  background-color: rgba(144, 144, 144, 0.2);
-  border: 1px solid rgba(0, 0, 0, 0.2);
+.grid-item {
   border-radius: 5px;
   padding: 80px;
-  margin-inline:20px;
+  margin-inline: 20px;
   text-align: center;
   font-size: 20px;
   font-weight: 700;
 }
 
-
-.grid-item>input{
+.grid-item > input {
   width: 40%;
   padding: 5px;
   border: 1px solid rgba(0, 0, 0, 0.4);
@@ -86,15 +86,19 @@
   font-size: 20px;
 }
 
-.btn2{
-  background-color: #c9286b;
+.btn2 {
+  background-color: darkslategray;
   padding: 8px;
   border-radius: 4px;
   color: white;
   cursor: pointer;
   font-size: 18px;
   font-weight: 600;
-  width: 43%;
+  width: 300px;
   margin-top: 20px;
   border: none;
+}
+.btn2:hover,
+.btn:hover {
+  background-color: cadetblue;
 }

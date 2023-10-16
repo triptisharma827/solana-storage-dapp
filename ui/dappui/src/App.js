@@ -131,18 +131,18 @@ function App() {
   return (
     <div className="App">
       <div className="">
-        <h2 className='header'>Solana Storage Dapp</h2>
+        <h2 className='header'>Storage Dapp using Solana</h2>
         <div >
         {!walletAddress && (
           <div>
-            <button className='btn' onClick={connectwallet}>Connect Wallet
+            <button className='btn' onClick={connectwallet}>Connect your Wallet
             </button> 
           </div>
         )}
         {walletAddress && (
           <div>
             <p>
-              Wallet Address: {' '}
+            Connected Wallet Address: {' '}
               <span className='address'>{walletAddress}</span>
             </p>
             <div className='grid-container'>
@@ -153,13 +153,11 @@ function App() {
                   placeholder='Enter a number'
                   onChange={onInputChange}
                   ></input>
-                  <button className='btn2' onClick={UpdateValue}>Store</button>
-
-              </div>
+                  <button className='btn2' onClick={UpdateValue}>Store value</button>
               {/*retrieve value column two */}
-              <div className='grid-item'>
-              <button className='btn2' onClick={Retrieve}>Retrieve</button>
               <p>{retrieveValue}</p>
+              <button className='btn2' onClick={Retrieve}>Retrieve value</button>
+              
               </div>
             </div>
             
